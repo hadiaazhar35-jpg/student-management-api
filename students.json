@@ -1,0 +1,34 @@
+[
+    {
+        "id": 101,
+        "name": "Sania Ali",
+        "department": "Computer science",
+        "grade": "A+ 3.2",
+        "email": "std45@email.com",
+        "age": 17
+    },
+    {
+        "id": 102,
+        "name": "Alia But",
+        "department": "Computer Science",
+        "grade": "B , 2.9",
+        "email": "Alia34@gmail.com",
+        "age": 23
+    },
+    {
+        "id": 103,
+        "name": "komal ali",
+        "department": "Computer Science",
+        "grade": "A+ , 3.6",
+        "email": "komi37@email.com",
+        "age": 22
+    },
+    {
+        "id": 104,
+        "name": "sidra Ali",
+        "department": "Computer Science",
+        "grade": "C , 2.0",
+        "email": "sidi78@email.com",
+        "age": 20
+    }
+]
