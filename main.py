@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 import json
 from fastapi.middleware.cors import CORSMiddleware 
-
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
@@ -9,6 +10,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.get("/app")
+def serve_frontend():
+    return FileResponse("index.html")
 # ------------------------
 # LOAD DATA FROM FILE
 # ------------------------
@@ -79,4 +85,5 @@ def delete_student(id: int):
             save_data(data)
             return {"message": "Student deleted successfully"}
 
+    return {"error": "Student not found"}
     return {"error": "Student not found"}
